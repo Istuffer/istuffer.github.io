@@ -23,11 +23,9 @@ body{
 .about{
 	background-color: #6B9B61;	
 	color: #fff;
-	height: 600px;
 }
 
 .portfolio-works{
-	height: 600px;
 }
 .portfolio-works .section .item-works{
 	background-color: #6C7A89;
@@ -46,7 +44,6 @@ body{
 	padding: 0 25px;
 }
 .contact{
-	height: 600px;
 }
 .contact .section a img{
 	background-color: #fff;
