@@ -1,0 +1,100 @@
+body{
+	font-family: Cuprum,'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+.header{
+	background-color: #2C3E50;
+	color: #fff;
+	padding: 0;
+}
+.logo-brand.block20.block {
+    font-size: 2.25rem;
+    text-align: center;
+    padding: 10px;
+}
+.name{
+	font-size: 3.75em;
+}
+.hero{
+	background-color: #008891;
+	color: #fff;
+	margin-top: 54px;
+	height: 600px;
+}
+.about{
+	background-color: #6B9B61;	
+	color: #fff;
+	height: 600px;
+}
+
+.portfolio-works{
+	height: 600px;
+}
+.portfolio-works .section .item-works{
+	background-color: #6C7A89;
+    height: 300px;
+    margin: 20px 1.5%;
+	cursor: pointer;
+}
+.portfolio-works .section .item-works:hover{
+	background: #D1D5D8 url(../img/expand-icon.png) no-repeat center center;
+	opacity: .5;
+}
+.intro-text{
+	color: #fff;
+}
+.about .about-text p{
+	padding: 0 25px;
+}
+.contact{
+	height: 600px;
+}
+.contact .section a img{
+	background-color: #fff;
+	margin: 25px 5px;
+}
+.contact .section a:hover img{
+	background-color: #008891;
+	border-radius: 50%;
+}
+.footer{
+	background-color: #2C3E50;
+	color: #fff;
+}
+/*nav*/
+.nav{
+	text-align: right;
+}
+.mainMenu{
+	margin: 25px 0;	
+	display: none;
+}
+.mainMenu li a{
+	color: #fff;
+	padding: 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.mainMenu li a:hover{
+	color: #3d8eb9;
+}
+.dropdown-toggle.drop {
+    display: block;
+	position: absolute;
+    top: 15px;
+    right: 25px;
+}
+
+@media screen and (min-width: 47.375em){
+	.mainMenu{	
+		display: block;
+	}
+	.mainMenu li{
+		display: inline-block;	
+	}
+	.dropdown-toggle.drop {
+		display: none;
+	}
+	.hero{
+		margin-top: 75px;
+	}
+}
