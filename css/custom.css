@@ -23,9 +23,11 @@ body{
 .about{
 	background-color: #6B9B61;	
 	color: #fff;
+	
 }
 
 .portfolio-works{
+	
 }
 .portfolio-works .section .item-works{
 	background-color: #6C7A89;
@@ -71,16 +73,49 @@ body{
 	text-transform: uppercase;
 	text-decoration: none;
 }
-.mainMenu li a:hover{
+.mainMenu li a.active, .mainMenu li a:hover{
 	color: #3d8eb9;
 }
 .dropdown-toggle.drop {
     display: block;
 	position: absolute;
-    top: 15px;
+    top: 7px;
     right: 25px;
+	background: url(../img/white_menu_icon.png)no-repeat top center;
+    width: 42px;
+    height: 42px;
 }
-
+/*modal*/
+.modal-window{
+	position: absolute;
+	width: 60%;
+	height: 80%;
+    top: 25px;    
+    left: 20%;
+    background: #fff;
+    padding: 25px;
+    border: 1px #eee solid;
+	display:none;
+}
+.close{
+	float: right;
+    margin-top: -20px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #d35400;
+    cursor: pointer;
+}
+.more{
+	text-align: center;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+	cursor: pointer;
+	color: #fff;
+    text-decoration: none;
+    padding: 5px;
+}
 @media screen and (min-width: 47.375em){
 	.mainMenu{	
 		display: block;

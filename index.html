@@ -24,11 +24,11 @@
 	<div class="section">
 			
 		<span class="logo-brand block20 block">
-			IS
+			&laquo; IS &raquo;
 		</span>	     
 		
       <nav class="block80 block nav" role="navigation">
-	  <span class="dropdown-toggle drop"><i class="menu-icon"></i> MENU </span>
+	  <span class="dropdown-toggle drop"><!--<img src="img/white_menu_icon.png">--></span>
 		<ul class="mainMenu">
 			<li><a href="#portfolio">Designs</a></li>
 			<li><a href="#about">About</a></li>
@@ -56,10 +56,26 @@
 <div id="portfolio" class="container portfolio-works">
 	<h2 class="centered">Designs</h2>
 	<div class="section">
-		<div class="block33 block item-works"></div>
-		<div class="block33 block item-works"></div>
-		<div class="block33 block item-works"></div>
+		<div class="block33 block item-works" data-modal="portfolio1"></div>
+		<div class="block33 block item-works" data-modal="portfolio2"></div>
+		<div class="block33 block item-works" data-modal="portfolio3"></div>
 	</div>
+	
+	<!-- modal window -->
+<div class="modal-window" id="portfolio1">
+<span class="close"> &#10539; </span>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+</div>
+<div class="modal-window" id="portfolio2">
+<span class="close"> &#10539; </span>
+
+</div>
+<div class="modal-window" id="portfolio3">
+<span class="close"> &#10539; </span>
+
+</div>
+	
 </div>
 
 <div id="about" class="container about">
@@ -82,9 +98,10 @@
 						and maintain web standards. 
 					</p>
 				</div>
+				 <a href="#" class="more">&#65086;</a>
 			</div>
            
-        
+       
 
 </div>
 
@@ -107,5 +124,67 @@
     </div>
 </footer>
 
+
+
+
+<script src="js/jquery.min.js"></script>
+<script>
+$(document).ready(function () {
+
+    $(document).on("scroll", onScroll);
+    
+    //smoothscroll
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+        
+        $('a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+      
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top-50
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
+	
+	//nav function
+	$('.dropdown-toggle').click(function(){
+		$('.mainMenu').toggle();
+	});
+	//to do reset menu on resize
+	
+	//modal function
+	$('.item-works').on('click', function(){
+		var thisModal = $(this).attr('data-modal'); 
+		//console.log(thisModal);
+		$('#'+thisModal).css('display','block');
+	});
+	$('.modal-window .close').on('click', function(){
+		$(this).parent().css('display','none');
+	});
+});
+
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('.mainMenu a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('.mainMenu li a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
+}
+</script>
 </body>
 </html>
