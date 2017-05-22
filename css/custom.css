@@ -88,14 +88,17 @@ body{
 /*modal*/
 .modal-window{
 	position: absolute;
-	width: 60%;
-	height: 80%;
+	width: 90%;
     top: 25px;    
-    left: 20%;
+    left: 5%;
     background: #fff;
     padding: 25px;
     border: 1px #eee solid;
 	display:none;
+}
+.modal-body img{
+	display: block;
+	margin: 10px auto;
 }
 .close{
 	float: right;
@@ -128,5 +131,11 @@ body{
 	}
 	.hero{
 		margin-top: 75px;
+	}
+	.modal-window{
+		position: absolute;
+		width: 60%;
+		top: 25px;    
+		left: 20%;
 	}
 }
