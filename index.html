@@ -207,7 +207,7 @@
     </div>
 </footer>
 
-
+<div id="modal-overlay" class="modal-overlay"></div>
 
 
 <script src="js/jquery.min.js"></script>
@@ -249,8 +249,8 @@ $(document).ready(function () {
 	
 		var thisModal = $(this).attr('data-modal'); 
 		//console.log(thisModal);
-		$('.modal-window').css('display','none');
-		$('#'+thisModal).css('display','block');
+		$('.modal-window, .modal-overlay').css('display','none');
+		$('.modal-overlay, #'+thisModal).css('display','block');
 		
 		 $('html, body').stop().animate({
             'scrollTop': $('#'+thisModal).offset().top-100
@@ -262,6 +262,10 @@ $(document).ready(function () {
 	});
 	$('.modal-window .close').on('click', function(){
 		$(this).parent().css('display','none');
+		$('.modal-overlay').css('display','none');
+	});
+	$('.modal-overlay').on('click', function(){
+		$('.modal-window .close').trigger('click');
 	});
 });
 
