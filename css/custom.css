@@ -6,11 +6,16 @@ body{
 	color: #fff;
 	padding: 0;
 }
+.header a{
+	color: #fff;
+	text-decoration: none;
+}
 .logo-brand.block20.block {
     font-size: 2.25rem;
     text-align: center;
     padding: 10px;
 }
+
 .name{
 	font-size: 3.75em;
 }
