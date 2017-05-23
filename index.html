@@ -59,27 +59,27 @@
 		<ul>
 			<li class="block33 block item-works" data-modal="portfolio1">
 				<img src="img/new-design.png">
-				<div class="overlay"></div>
+				<span class="overlay"></span>
 			</li>
 			<li class="block33 block item-works" data-modal="portfolio2">
 				<img src="img/maintenance.png">
-				<div class="overlay"></div>
+				<span class="overlay"></span>
 			</li>
 			<li class="block33 block item-works" data-modal="portfolio3">
 				<img src="img/data-management.png">
-				<div class="overlay"></div>
+				<span class="overlay"></span>
 			</li>
 			<li class="block33 block item-works" data-modal="portfolio4">
 				<img src="img/update.png">
-				<div class="overlay"></div>
+				<span class="overlay"></span>
 			</li>
 			<li class="block33 block item-works" data-modal="portfolio5">
 				<img src="img/ab-test.png">
-				<div class="overlay"></div>
+				<span class="overlay"></span>
 			</li>
 			<li class="block33 block item-works" data-modal="portfolio6">
 				<img src="img/others.png">
-				<div class="overlay"></div>
+				<span class="overlay"></span>
 			</li>
 		</ul>
 	</div>
@@ -90,7 +90,7 @@
 	<div class="modal-body">
 		<img src="img/ge-screens.jpg">
 		<div class="">
-			<p><a href="http://www.repair.geappliances.com" target="_blank">GE Appliances</a></p>
+			<p><a href="http://repair.geappliances.com/" target="_blank">GE Appliances</a></p>
 			<p>
 				This project was a creative refresh from a bootstrap framework site and able to re-create the page with a minimal footprint by using own responsive template.				
 			</p>
@@ -246,9 +246,19 @@ $(document).ready(function () {
 	
 	//modal function
 	$('.item-works').on('click', function(){
+	
 		var thisModal = $(this).attr('data-modal'); 
 		//console.log(thisModal);
+		$('.modal-window').css('display','none');
 		$('#'+thisModal).css('display','block');
+		
+		 $('html, body').stop().animate({
+            'scrollTop': $('#'+thisModal).offset().top-100
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+		
 	});
 	$('.modal-window .close').on('click', function(){
 		$(this).parent().css('display','none');
