@@ -56,12 +56,32 @@
 <div id="portfolio" class="container portfolio-works">
 	<h2 class="centered">Designs</h2>
 	<div class="section">
-		<div class="block33 block item-works" data-modal="portfolio1"></div>
-		<div class="block33 block item-works" data-modal="portfolio2"></div>
-		<div class="block33 block item-works" data-modal="portfolio3"></div>
-		<div class="block33 block item-works" data-modal="portfolio4"></div>
-		<div class="block33 block item-works" data-modal="portfolio5"></div>
-		<div class="block33 block item-works" data-modal="portfolio6"></div>
+		<ul>
+			<li class="block33 block item-works" data-modal="portfolio1">
+				<img src="img/new-design.png">
+				<div class="overlay"></div>
+			</li>
+			<li class="block33 block item-works" data-modal="portfolio2">
+				<img src="img/maintenance.png">
+				<div class="overlay"></div>
+			</li>
+			<li class="block33 block item-works" data-modal="portfolio3">
+				<img src="img/data-management.png">
+				<div class="overlay"></div>
+			</li>
+			<li class="block33 block item-works" data-modal="portfolio4">
+				<img src="img/update.png">
+				<div class="overlay"></div>
+			</li>
+			<li class="block33 block item-works" data-modal="portfolio5">
+				<img src="img/ab-test.png">
+				<div class="overlay"></div>
+			</li>
+			<li class="block33 block item-works" data-modal="portfolio6">
+				<img src="img/others.png">
+				<div class="overlay"></div>
+			</li>
+		</ul>
 	</div>
 	
 	<!-- modal window -->
@@ -97,7 +117,7 @@
 		<div class="">
 			<p><a href="https://www.cities.sylvanlearning.com" target="_blank">Sylvan Learning</a></p>
 			<p>
-				Responsible on monthly updates, images, content and some styling updates.
+				Responsible on monthly updates on database, images, content and some styling updates.
 			</p>
 		</div>
 	</div>
@@ -215,6 +235,7 @@ $(document).ready(function () {
             window.location.hash = target;
             $(document).on("scroll", onScroll);
         });
+		$('.mainMenu').hide();
     });
 	
 	//nav function

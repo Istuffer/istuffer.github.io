@@ -26,19 +26,33 @@ body{
 	
 }
 
-.portfolio-works{
-	
+.portfolio-works ul{
+	list-style: none;
 }
-.portfolio-works .section .item-works{
-	background-color: #6C7A89;
-    height: 300px;
-    margin: 20px 1.5%;
+
+.portfolio-works .section .item-works img{
+	width: 70%;
+    margin: 20px auto;
+    display: block;
 	cursor: pointer;
 }
-.portfolio-works .section .item-works:hover{
-	background: #D1D5D8 url(../img/expand-icon.png) no-repeat center center;
-	opacity: .5;
+.portfolio-works .section .item-works .overlay{
+	width: 70%;
+	background: none;
+	position: absolute;
+	top: 0;
 }
+.portfolio-works .section .item-works:hover .overlay{
+	display: block;
+	width: 70%;
+	background: #d1d5d8 url(../img/expand-icon.png) no-repeat center center;
+	border-radius: 50%;
+	opacity: .7;
+}
+/*.portfolio-works .section .item-works img:hover{
+	background-image:url(../img/expand-icon.png) no-repeat center center;
+	opacity: .5;
+}*/
 .intro-text{
 	color: #fff;
 }
@@ -94,7 +108,11 @@ body{
     background: #fff;
     padding: 25px;
     border: 1px #eee solid;
+	-webkit-box-shadow: 0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+	-moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.75);
+	box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.75);
 	display:none;
+	
 }
 .modal-body img{
 	display: block;
