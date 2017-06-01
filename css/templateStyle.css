@@ -93,7 +93,7 @@ select {
 	border-radius: 0px;}
 select:focus { outline: 0; }
 select::-ms-expand {display: none;} 
-ul{	padding: 0;}
+/*ul{	padding: 0;}*/
 
 .container:after,.section:after,.clearfix {
 	content: "";
@@ -149,4 +149,7 @@ ul{	padding: 0;}
     top: 0;}
 .centered{
 	text-align: center;
+}
+.medium-font{
+	font-size: 22px;
 }
