@@ -1,0 +1,201 @@
+/* import reset.css */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+/* Typography */
+body{
+  font-family: 'Raleway', sans-serif;
+  font-size:17px;
+  line-height:1.5em;
+  margin:0;
+  padding:0;
+}
+
+h1{
+  font-family: 'Boogaloo', cursive;
+  font-size: 48px;
+}
+
+h2{
+  font-size:32px;
+  margin:0;
+  padding-bottom:3%;
+}
+
+h3{
+  font-size:22px;
+  margin:0;
+}
+
+p{
+  padding: 10px 0;
+}
+
+/* Global styles */
+.container{
+  margin:auto;
+  width: 90%;
+}
+
+.button-link{
+  color: #ffffff;
+  background: rgba(0,0,0,0);
+  border: solid 2px #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+.button-link:hover{
+  border-color: #bdc3c7;
+  color: #bdc3c7;
+}
+
+.button-link:active{
+  border-color: #7f8c8d;
+  color: #7f8c8d;
+}
+
+input[type=text], input[type=email], select, textarea {
+    /*width: 100%;*/
+    padding: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #446CB3;
+    color: white;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-left: -4px;
+}
+
+input[type=submit]:hover {
+    background-color: #4183D7;
+}
+
+/* Custom styles */
+.hero{
+  background: url(../img/hero.jpg) no-repeat center center;
+  background-attachment: fixed;
+  height: 700px;
+  overflow: hidden;
+}
+
+.hero h1{
+  position: relative;
+  margin-top: 15%;
+  color: #34495e;
+  background: #ecf0f1;
+  padding: 10px 20px;
+  opacity: .7;
+  display: inline-block;
+}
+
+.hero-content p{
+  color: #95a5a6;
+}
+
+.services{
+  padding: 4% 0;
+}
+
+.features .row div{
+  margin:0;
+  padding: 0;
+}
+
+.features .left-content{
+  background: #3498db;
+}
+
+.features .right-content{
+  background: #16a085;
+}
+
+.features .left-content .content, .features .right-content .content{
+  color: #ffffff;
+  width: 60%;
+  margin: 0 auto;
+  padding: 15% 5%;
+}
+/* team */
+.teams{
+  padding: 5% 0;
+}
+.profile-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  text-align: center;
+  padding: 0;
+}
+.profile-pic{
+  background: #ecf0f1;
+  padding-top: 20px;
+}
+
+.profile-pic img{
+  display: block;
+  margin: 0 auto;
+}
+
+.profile-info{
+  padding-bottom: 25px;
+}
+
+.profile-info .emp-name{
+  padding-top: 20px;
+}
+.profile-info .emp-position{
+  color: #7f8c8d;
+  font-size: 15px;
+}
+.profile-info .desc{
+  font-size: 14px;
+  text-align: justify;
+  padding: 0 25px 15px
+}
+.profile-info .emp-socials a{
+  color: #3b3b3b;
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.profile-info .emp-socials a:hover{
+  color: #e67e22;
+}
+/* contact */
+.contact{
+  background: #bdc3c7;
+  color: #f2f1ef;
+  padding-top: 5%;
+  padding-bottom: 4%;
+}
+
+.contact .container .row div{
+  margin: auto;
+}
+
+/* footer */
+.footer{
+  background: #34495e;
+  padding: 3% 0;
+  color: #f4f4f4;
+}
+@media only screen and (max-width: 48em){
+.hero{
+  height: 400px;
+  background-attachment: scroll;
+}
+
+.hero h1 {
+  margin-top: 25%;
+}
+}
