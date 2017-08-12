@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flat UI | Contact Demo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Boogaloo|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="contact" class="contact-page">
+  <!-- Navigation Menu -->
+  <header id="nav-menu" class="nav-menu">
+    <nav class="nav" id="nav" role="navigation">
+      <a href="/">Logo</a>
+      <a href="about-us.html">About us</a>
+      <a href="services.html">Services</a>
+      <a href="features.html">Features</a>
+      <a href="team.html">Our Team</a>
+      <a href="#" class="active">Contact</a>
+      <a href="javascript:void(0);" class="menu-icon" id="menuIcon" onclick="myFunction()">&#9776;</a>
+    </nav>
+  </header>
+
+  <!-- Banner Section -->
+  <section id="banner" class="">
+    <div id="map" class="map">
+    </div>
+  </section>
+  <!-- Main -->
+  <section class="main">
+    <div class="container">
+      <div class="row middle-xs">
+        <div class="col-xs-12 col-sm-5 col-md-4 col-lg-4 office-address">
+            <p>
+              <i class="fa fa-map-o"></i>
+              <span>
+                123 Address St. <br>
+                City, Province <br>
+                A0A 1A1
+              </span>
+            </p>
+        </div>
+        <div class="col-xs-12 col-sm-7 col-md-8 col-lg-8">
+          <div class="content">
+            <h2 class="orange-font">Let's get in touch!</h2>
+            <div class="form-container">
+              <form action="#">
+                <input type="text" placeholder="Full Name" name="fullname" required="required"/>
+                <input type="text" placeholder="Phone Number" name="phone" />
+                <input type="email" placeholder="Email Adress" name="email" required="required"/>
+                <input type="submit" value="Send" class="formBtnSend"/>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="row center-xs middle-xs social-link">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-pinterest"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="content">
+      <div class="row center-xs center-sm center-md center-lg">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <p>Copyright &copy; 2017 | Flat Design</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script src="js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFQ5GIlYcWChtWwGAh1c123zYJvGlld2w"></script>
+    <script>
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 16,
+            scrollwheel: false,
+            navigationControl: false,
+            mapTypeControl: false,
+            scaleControl: false,
+            draggable: false,
+            center: {lat: 43.6426, lng: -79.3871}
+          });
+
+          var image = 'img/mapmarker.png';
+          var beachMarker = new google.maps.Marker({
+            position: {lat: 43.6426, lng: -79.3871},
+            map: map,
+            animation: google.maps.Animation.DROP,
+            icon: image
+          });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flat UI | Team Demo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Boogaloo|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body id="team" class="team">
+  <!-- Navigation Menu -->
+  <header id="nav-menu" class="nav-menu">
+    <nav class="nav" id="nav" role="navigation">
+      <a href="/">Logo</a>
+      <a href="about-us.html">About us</a>
+      <a href="services.html">Services</a>
+      <a href="features.html">Features</a>
+      <a href="#" class="active">Our Team</a>
+      <a href="contact.html">Contact</a>
+      <a href="javascript:void(0);" class="menu-icon" id="menuIcon" onclick="myFunction()">&#9776;</a>
+    </nav>
+  </header>
+
+  <!-- Banner Section -->
+  <!-- <section id="banner" class="hero">
+    <div class="container">
+      <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-7 hero-content">
+          <h1>Nullam arcu orci. Lacus sapien nonummy.</h1>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Main -->
+  <section class="main">
+    <div class="container">
+      <div class="content">
+        <h2>Meet our Team</h2>
+
+        <div class="row profile center-xs">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <div class="image">
+                  <img src="img/team1.png" alt="Avatar">
+              </div>
+              <div class="info">
+                <h3>John Smith</h3>
+                <p class="title">Managing Director</p>
+              </div>
+              <div class="middle">
+                <div class="text profile-btn" data-modal="team1Modal">See Profile</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <div class="image">
+                  <img src="img/team2.png" alt="Avatar">
+              </div>
+              <div class="info">
+                <h3>Mark Spencer</h3>
+                <p class="title">SEO Specialist</p>
+              </div>
+              <div class="middle">
+                <div class="text profile-btn" data-modal="team2Modal">See Profile</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <div class="image">
+                  <img src="img/team3.png" alt="Avatar">
+              </div>
+              <div class="info">
+                <h3>Jane Roe</h3>
+                <p class="title">Graphic Designer</p>
+              </div>
+              <div class="middle">
+                <div class="text profile-btn" data-modal="team3Modal">See Profile</div>
+              </div>
+            </div>
+          </div>
+        <!-- </div>
+
+        <div class="row profile center-xs"> -->
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <div class="image">
+                  <img src="img/team4.png" alt="Avatar">
+              </div>
+              <div class="info">
+                <h3>Yomiko Sun</h3>
+                <p class="title">Web Developer</p>
+              </div>
+              <div class="middle">
+                <div class="text profile-btn" data-modal="team4Modal">See Profile</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <div class="image">
+                  <img src="img/team6.png" alt="Avatar">
+              </div>
+              <div class="info">
+                <h3>Emily Jones</h3>
+                <p class="title">Web Developer</p>
+              </div>
+              <div class="middle">
+                <div class="text profile-btn" data-modal="team5Modal">See Profile</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <div class="image">
+                  <img src="img/team5.png" alt="Avatar">
+              </div>
+              <div class="info">
+                <h3>Jake Stonesteel</h3>
+                <p class="title">Graphic Designer</p>
+              </div>
+              <div class="middle">
+                <div class="text profile-btn" data-modal="team6Modal">See Profile</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+</section>
+
+<!-- The Modal -->
+<div id="team1Modal" class="modal">
+  <div class="modal-content">
+    <p class="closeModal">&times;</p>
+    <div class="profile-info">
+      <h3 class="">John Smith</h3>
+      <span class="title">Managing Director</span>
+      <span class="emp-socials">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-github"></i></a>
+      </span>
+      <h4>About</h4>
+      <p class="">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+      <a href="#" class="contact-btn">Contact</a>
+    </div>
+  </div>
+</div>
+<div id="team2Modal" class="modal">
+  <div class="modal-content">
+    <p class="closeModal">&times;</p>
+    <div class="profile-info">
+      <h3 class="">Mark Spencer</h3>
+      <span class="title">SEO Specialist</span>
+      <span class="emp-socials">
+        <a href="#"><i class="fa fa-dribble"></i></a>
+        <a href="#"><i class="fa fa-bitbucket"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-pinterest"></i></a>
+      </span>
+      <h4>About</h4>
+      <p class="">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+      <a href="#" class="contact-btn">Contact</a>
+    </div>
+  </div>
+</div>
+<div id="team3Modal" class="modal">
+  <div class="modal-content">
+    <p class="closeModal">&times;</p>
+    <div class="profile-info">
+      <h3 class="">Jane Roe</h3>
+      <span class="title">Graphic Designer</span>
+      <span class="emp-socials">
+        <a href="#"><i class="fa fa-snapchat"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-google-plus"></i></a>
+      </span>
+      <h4>About</h4>
+      <p class="">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+      <a href="#" class="contact-btn">Contact</a>
+    </div>
+  </div>
+</div>
+<div id="team4Modal" class="modal">
+  <div class="modal-content">
+    <p class="closeModal">&times;</p>
+    <div class="profile-info">
+      <h3 class="">Yomiko Sun</h3>
+      <span class="title">Web Developer</span>
+      <span class="emp-socials">
+        <a href="#"><i class="fa fa-skype"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-slack"></i></a>
+      </span>
+      <h4>About</h4>
+      <p class="">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+      <a href="#" class="contact-btn">Contact</a>
+    </div>
+  </div>
+</div>
+<div id="team5Modal" class="modal">
+  <div class="modal-content">
+    <p class="closeModal">&times;</p>
+    <div class="profile-info">
+      <h3 class="">Emily Jones</h3>
+      <span class="title">Web Developer</span>
+      <span class="emp-socials">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+      </span>
+      <h4>About</h4>
+      <p class="">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+      <a href="#" class="contact-btn">Contact</a>
+    </div>
+  </div>
+</div>
+<div id="team6Modal" class="modal">
+  <div class="modal-content">
+    <p class="closeModal">&times;</p>
+    <div class="profile-info">
+      <h3 class="">Jake Stonesteel</h3>
+      <span class="title">Graphic Designer</span>
+      <span class="emp-socials">
+        <a href="#"><i class="fa fa-skype"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-linkedin"></i></a>
+        <a href="#"><i class="fa fa-google-plus"></i></a>
+      </span>
+      <h4>About</h4>
+      <p class="">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+      <a href="#" class="contact-btn">Contact</a>
+    </div>
+  </div>
+</div>
+
+  <!-- contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="row center-xs middle-xs social-link">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-pinterest"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="content">
+      <div class="row center-xs center-sm center-md center-lg">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+          <p>Copyright &copy; 2017 | Flat Design</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
